@@ -334,3 +334,19 @@ h6,
     height: 100vh;
     border: 0;
 }
+
+td{
+    text-align: center;
+}
+
+.qtd-produto{
+    display: flex;
+    justify-content: center;  
+    width:90px;
+
+}
+
+.qtd-produto input{
+    width: 50px;
+    text-align: center;
+}
