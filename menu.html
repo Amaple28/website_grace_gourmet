@@ -30,34 +30,15 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Topbar Start -->
-    <div class="container-fluid px-0 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-4 text-center bg-secondary py-3"> 
-            </div>
-            <div class="col-lg-4 text-center bg-primary border-inner py-3">
-                <div class="d-inline-flex align-items-center justify-content-center">
-                    <a href="index.html" class="navbar-brand">
-                        <h1 class="m-0 text-uppercase text-white">
-                            <!-- <i class="fa fa-birthday-cake fs-1 text-dark me-3"></i> -->
-                            <img src="img/logo_grace.png" alt="Logo" style="width: 80px;">
-                            Grace Gourmet
-                        </h1>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center bg-secondary py-3"> 
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-
+<body> 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
-        <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-primary me-3"></i>Grace Gourmet</h1>
+        <a href="index.html" class="navbar-brand bg-primary d-inline-flex align-items-center justify-content-center py-3 logo-nav">  <!-- d-lg-none -->
+            <img src="img/logo_grace.png" alt="Logo" style="width: 50px;">
+            <h1 class="m-0 text-uppercase text-white">
+                <!-- <i class="fa fa-birthday-cake fs-1 text-primary me-3"></i> -->
+                Grace Gourmet
+            </h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -68,13 +49,20 @@
                 <a href="about.html" class="nav-item nav-link">Sobre Nós</a>
                 <a href="menu.html" class="nav-item nav-link active">Cardápio</a>
                 <a href="contact.html" class="nav-item nav-link">Contato</a> 
-            </div>
-            <button type="button" class="btn btn-outline-primary btn-cart" data-bs-toggle="modal" data-bs-target="#checkoutModal">
-                <i class="bi bi-cart4"></i>
-            </button>
+            </div> 
         </div>
     </nav>
     <!-- Navbar End --> 
+
+    <!-- Button Checkout -->  
+    <button type="button" class="btn btn-primary btn-lg btn-checkout" data-bs-toggle="modal" data-bs-target="#checkoutModal">
+        <i class="bi bi-cart"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            0
+            <span class="visually-hidden">Produtos</span>
+        </span>
+    </button>
+    <!-- Button Checkout End -->
 
     <!-- Modal Checkout Start-->
     <div class="modal right fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="checkoutModalLabel" aria-hidden="true">
@@ -90,13 +78,12 @@
                             <tr>
                                 <th>Produto</th>
                                 <th>Preço</th>
-                                <th style="text-center">Qtd.</th>
-                                <th>Sub Total</th>
+                                <th style="text-center">Qtd.</th> 
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody id="carrinho-tbody">
+                            <!-- <tr>
                                 <td class="nome">Bolo</td>
                                 <td class="valor-un">R$ 34,00</td>
                                 <td id="qtd-produto" class="qtd-produto">
@@ -106,27 +93,17 @@
                                 </td>
                                 <td class="valor-total">R$ 34,00</td>
                                 <td><button class="btn btn-outline-danger btn-sm" id="btn-remover">&times;</button></td>
-                            </tr>
-                            <tr>
-                                <td class="nome">Açaí</td>
-                                <td class="valor-un">R$ 18,00</td>
-                                <td id="qtd-produto" class="qtd-produto">
-                                    <button class="btn btn-outline-primary btn-sm" id="btn-decrementar">-</button>
-                                    <input type="number" value="1" min="1">
-                                    <button class="btn btn-outline-primary btn-sm" id="btn-incrementar">+</button>
-                                </td>
-                                <td class="valor-total">R$ 18,00</td>
-                                <td><button class="btn btn-outline-danger btn-sm" id="btn-remover">&times;</button></td>
-                            </tr>
+                            </tr> --> 
                             
+                        </tbody>
+                        <tfoot>
                             <tr>
                                 <td></td>
-                                <td></td>
-                                <td></td>
+                                <td></td> 
                                 <td><b>Total: </b></td>
                                 <td class="valor-total-pedido">R$ 00,00</td>
                             </tr>
-                        </tbody>
+                        </tfoot>
                     </table>
                     <div class="d-flex justify-content-between">
                         <button class="btn btn-outline-primary">

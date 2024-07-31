@@ -59,6 +59,9 @@ h6,
     border: 1px solid var(--light);
     z-index: 0;
 }
+.border-inner-dark::before { 
+    border: 1px solid var(--primary); 
+}
 
 .btn-square {
     width: 40px;
@@ -125,6 +128,13 @@ h6,
     .navbar-dark .navbar-nav .nav-link  {
         padding: 10px 0;
     }
+}
+
+.logo-nav{
+    padding: 0 20px; 
+    border: 1px solid var(--light);
+    border-radius: 50px;
+    margin: 10px 0 10px 10px;
 }
 
 .hero-header {
@@ -260,7 +270,7 @@ h6,
 }
 
 .contact::after {
-    background: linear-gradient(rgba(43, 40, 37, .5), rgba(43, 40, 37, .5)), url(../img/bg.jpg) center center no-repeat;
+    background: linear-gradient(rgba(43, 40, 37, .5), rgba(43, 40, 37, .5)), url(../img/bg.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -320,7 +330,7 @@ h6,
 }
 
 .bg-img {
-    background: linear-gradient(rgba(43, 40, 37, .5), rgba(43, 40, 37, .5)), url(../img/bg.jpg) center center no-repeat;
+    background: linear-gradient(rgba(43, 40, 37, .5), rgba(43, 40, 37, .5)), url(../img/bg.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -349,4 +359,50 @@ td{
 .qtd-produto input{
     width: 50px;
     text-align: center;
+}
+
+.tab-content>.active {
+    display: flex;
+}
+
+.fixed-size {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner mantendo a proporção */
+}
+
+.carousel-inner {
+    width: 200px; /* Largura fixa para o contêiner do carrossel */
+    height: 200px; /* Altura fixa para o contêiner do carrossel */
+}
+
+.btn-checkout { 
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: .5s; 
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+    z-index: 99;
+}
+
+.btn-incrementar,
+.btn-decrementar { 
+    border: none; 
+    border-radius: 50%;
+    font-size: 15px;
+    transition: .5s;   
+}
+
+.input-quantidade{
+    width: 45px !important;
+    text-align: center; 
+}
+
+.btn-remover{  
+    border-radius: 50%;
+    font-size: 15px;
+    transition: .5s;   
 }
