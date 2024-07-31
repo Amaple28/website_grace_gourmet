@@ -67,7 +67,7 @@ const produtos = [
         categoria: 3,
         disponibilidade: true,
         imagens: [ 
-            'img/produtos/cp_acai1.jpeg'
+            './img/produtos/cp_acai1.jpeg'
         ]
     },
     {
