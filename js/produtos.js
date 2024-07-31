@@ -67,7 +67,7 @@ const produtos = [
         categoria: 3,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cp_acai1.jpeg'
+            './img/produtos/cp_acai1.jpeg'
         ]
     },
     {
@@ -78,7 +78,7 @@ const produtos = [
         categoria: 3,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cp_acai1.jpeg'
+            './img/produtos/cp_acai1.jpeg'
         ]
     },
     {
@@ -89,7 +89,7 @@ const produtos = [
         categoria: 3,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cp_acai1.jpeg'
+            './img/produtos/cp_acai1.jpeg'
         ]
     },
     {
@@ -100,7 +100,7 @@ const produtos = [
         categoria: 20,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/trio_cremoso1.jpeg'
+            './img/produtos/trio_cremoso1.jpeg'
         ]
     },
     {
@@ -111,7 +111,7 @@ const produtos = [
         categoria: 2,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/brigadeiro1.jpeg'
+            './img/produtos/brigadeiro1.jpeg'
         ]
     },
     {
@@ -122,8 +122,8 @@ const produtos = [
         categoria: 2,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/trufa1.jpeg',
-            '../img/produtos/trufa2.jpeg'
+            './img/produtos/trufa1.jpeg',
+            './img/produtos/trufa2.jpeg'
         ]
     },
     {
@@ -134,9 +134,9 @@ const produtos = [
         categoria: 2,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/bombom_morango1.jpeg',
-            '../img/produtos/bombom_morango2.jpeg',
-            '../img/produtos/bombom_morango3.jpeg'
+            './img/produtos/bombom_morango1.jpeg',
+            './img/produtos/bombom_morango2.jpeg',
+            './img/produtos/bombom_morango3.jpeg'
         ]
     },
     {
@@ -147,7 +147,7 @@ const produtos = [
         categoria: 2,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/coxinha_morango1.jpeg' 
+            './img/produtos/coxinha_morango1.jpeg' 
         ]
     },
     {
@@ -158,7 +158,7 @@ const produtos = [
         categoria: 2,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/espetinho_morango1.jpeg' 
+            './img/produtos/espetinho_morango1.jpeg' 
         ]
     },
     {
@@ -169,7 +169,7 @@ const produtos = [
         categoria: 1,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cp_felicidade12.jpeg' 
+            './img/produtos/cp_felicidade12.jpeg' 
         ]
     },
     {
@@ -180,7 +180,7 @@ const produtos = [
         categoria: 1,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cp_felicidade13.jpeg' 
+            './img/produtos/cp_felicidade13.jpeg' 
         ]
     },
     {
@@ -191,7 +191,7 @@ const produtos = [
         categoria: 1,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cp_felicidade6.jpeg' 
+            './img/produtos/cp_felicidade6.jpeg' 
         ]
     },
     {
@@ -202,7 +202,7 @@ const produtos = [
         categoria: 1,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cp_felicidade14.jpeg' 
+            './img/produtos/cp_felicidade14.jpeg' 
         ]
     },
     {
@@ -213,7 +213,7 @@ const produtos = [
         categoria: 1,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cp_felicidade16.jpeg' 
+            './img/produtos/cp_felicidade16.jpeg' 
         ]
     },
     {
@@ -224,7 +224,7 @@ const produtos = [
         categoria: 1,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cp_felicidade17.jpeg' 
+            './img/produtos/cp_felicidade17.jpeg' 
         ]
     },
     {
@@ -235,7 +235,7 @@ const produtos = [
         categoria: 1,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cp_felicidade7.jpeg' 
+            './img/produtos/cp_felicidade7.jpeg' 
         ]
     },
     {
@@ -246,7 +246,7 @@ const produtos = [
         categoria: 1,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cp_felicidade9.jpeg' 
+            './img/produtos/cp_felicidade9.jpeg' 
         ]
     }, 
     {
@@ -257,7 +257,7 @@ const produtos = [
         categoria: 1,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cp_felicidade5.jpeg' 
+            './img/produtos/cp_felicidade5.jpeg' 
         ]
     }, 
     {
@@ -279,7 +279,7 @@ const produtos = [
         categoria: 4,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/escondidinho_brownie1.jpeg' 
+            './img/produtos/escondidinho_brownie1.jpeg' 
         ]
     }, 
     {
@@ -323,7 +323,7 @@ const produtos = [
         categoria: 6,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/pudim1.jpeg' 
+            './img/produtos/pudim1.jpeg' 
         ]
     }, 
     {
@@ -411,8 +411,8 @@ const produtos = [
         categoria: 8,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/bolo_pote1.jpeg',
-            '../img/produtos/bolo_pote2.jpeg'
+            './img/produtos/bolo_pote1.jpeg',
+            './img/produtos/bolo_pote2.jpeg'
         ]
     }, 
     {
@@ -423,8 +423,8 @@ const produtos = [
         categoria: 8,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/bolo_pote1.jpeg',
-            '../img/produtos/bolo_pote2.jpeg'
+            './img/produtos/bolo_pote1.jpeg',
+            './img/produtos/bolo_pote2.jpeg'
         ]
     }, 
     {
@@ -435,8 +435,8 @@ const produtos = [
         categoria: 8,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/bolo_pote1.jpeg',
-            '../img/produtos/bolo_pote2.jpeg'
+            './img/produtos/bolo_pote1.jpeg',
+            './img/produtos/bolo_pote2.jpeg'
         ]
     }, 
     {
@@ -447,8 +447,8 @@ const produtos = [
         categoria: 8,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/bolo_pote1.jpeg',
-            '../img/produtos/bolo_pote2.jpeg'
+            './img/produtos/bolo_pote1.jpeg',
+            './img/produtos/bolo_pote2.jpeg'
         ]
     }, 
     {
@@ -459,8 +459,8 @@ const produtos = [
         categoria: 8,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/bolo_pote1.jpeg',
-            '../img/produtos/bolo_pote2.jpeg'
+            './img/produtos/bolo_pote1.jpeg',
+            './img/produtos/bolo_pote2.jpeg'
         ]
     }, 
     {
@@ -471,8 +471,8 @@ const produtos = [
         categoria: 8,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/bolo_pote1.jpeg',
-            '../img/produtos/bolo_pote2.jpeg'
+            './img/produtos/bolo_pote1.jpeg',
+            './img/produtos/bolo_pote2.jpeg'
         ]
     },  
     {
@@ -483,7 +483,7 @@ const produtos = [
         categoria: 9,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cone_trufado1.jpeg'
+            './img/produtos/cone_trufado1.jpeg'
         ]
     },
     {
@@ -494,7 +494,7 @@ const produtos = [
         categoria: 9,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cone_trufado1.jpeg'
+            './img/produtos/cone_trufado1.jpeg'
         ]
     },
     {
@@ -505,7 +505,7 @@ const produtos = [
         categoria: 9,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cone_trufado1.jpeg'
+            './img/produtos/cone_trufado1.jpeg'
         ]
     },
     {
@@ -516,7 +516,7 @@ const produtos = [
         categoria: 9,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cone_trufado1.jpeg'
+            './img/produtos/cone_trufado1.jpeg'
         ]
     },
     {
@@ -527,7 +527,7 @@ const produtos = [
         categoria: 9,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cone_trufado1.jpeg'
+            './img/produtos/cone_trufado1.jpeg'
         ]
     },
     {
@@ -538,7 +538,7 @@ const produtos = [
         categoria: 8,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/bolo1.jpeg'
+            './img/produtos/bolo1.jpeg'
         ]
     }, 
     {
@@ -549,7 +549,7 @@ const produtos = [
         categoria: 20,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/pao_mel1.jpeg'
+            './img/produtos/pao_mel1.jpeg'
         ]
     }, 
     // {
@@ -560,7 +560,7 @@ const produtos = [
     //     categoria: 20,
     //     disponibilidade: true,
     //     imagens: [ 
-    //         '../img/produtos/pao_mel1.jpeg'
+    //         './img/produtos/pao_mel1.jpeg'
     //     ]
     // }, 
     {
@@ -571,8 +571,8 @@ const produtos = [
         categoria: 10,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/sdb_brownie2.jpeg',
-            '../img/produtos/sdb_brownie1.jpeg'
+            './img/produtos/sdb_brownie2.jpeg',
+            './img/produtos/sdb_brownie1.jpeg'
         ]
     }, 
     {
@@ -583,8 +583,8 @@ const produtos = [
         categoria: 10,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/sdb_brownie2.jpeg',
-            '../img/produtos/sdb_brownie1.jpeg'
+            './img/produtos/sdb_brownie2.jpeg',
+            './img/produtos/sdb_brownie1.jpeg'
         ]
     }, 
     {
@@ -595,8 +595,8 @@ const produtos = [
         categoria: 10,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/sdb_brownie1.jpeg',
-            '../img/produtos/sdb_brownie2.jpeg'
+            './img/produtos/sdb_brownie1.jpeg',
+            './img/produtos/sdb_brownie2.jpeg'
         ]
     },
     {
@@ -607,8 +607,8 @@ const produtos = [
         categoria: 10,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/sdb_brownie1.jpeg',
-            '../img/produtos/sdb_brownie2.jpeg'
+            './img/produtos/sdb_brownie1.jpeg',
+            './img/produtos/sdb_brownie2.jpeg'
         ]
     },
     {
@@ -619,7 +619,7 @@ const produtos = [
         categoria: 10,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/brownie1.jpeg'
+            './img/produtos/brownie1.jpeg'
         ]
     },
     {
@@ -630,8 +630,8 @@ const produtos = [
         categoria: 11,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/barra_trufada1.jpeg',
-            '../img/produtos/barra_trufada2.jpeg'
+            './img/produtos/barra_trufada1.jpeg',
+            './img/produtos/barra_trufada2.jpeg'
         ]
     },
     {
@@ -642,8 +642,8 @@ const produtos = [
         categoria: 11,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/barra_trufada1.jpeg',
-            '../img/produtos/barra_trufada2.jpeg'
+            './img/produtos/barra_trufada1.jpeg',
+            './img/produtos/barra_trufada2.jpeg'
         ]
     },
     {
@@ -654,8 +654,8 @@ const produtos = [
         categoria: 11,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/barra_trufada1.jpeg',
-            '../img/produtos/barra_trufada2.jpeg'
+            './img/produtos/barra_trufada1.jpeg',
+            './img/produtos/barra_trufada2.jpeg'
         ]
     },
     {
@@ -666,8 +666,8 @@ const produtos = [
         categoria: 11,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/barra_trufada1.jpeg',
-            '../img/produtos/barra_trufada2.jpeg'
+            './img/produtos/barra_trufada1.jpeg',
+            './img/produtos/barra_trufada2.jpeg'
         ]
     },
     {
@@ -678,8 +678,8 @@ const produtos = [
         categoria: 11,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/barra_trufada3.jpeg', 
-            '../img/produtos/barra_trufada2.jpeg'
+            './img/produtos/barra_trufada3.jpeg', 
+            './img/produtos/barra_trufada2.jpeg'
         ]
     },
     {
@@ -690,7 +690,7 @@ const produtos = [
         categoria: 20,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/canjica1.jpeg' 
+            './img/produtos/canjica1.jpeg' 
         ]
     },  
     {
@@ -701,7 +701,7 @@ const produtos = [
         categoria: 12,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/donuts1.jpeg' 
+            './img/produtos/donuts1.jpeg' 
         ]
     },  
     {
@@ -712,7 +712,7 @@ const produtos = [
         categoria: 12,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/donuts1.jpeg' 
+            './img/produtos/donuts1.jpeg' 
         ]
     },  
     {
@@ -723,7 +723,7 @@ const produtos = [
         categoria: 12,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/donuts1.jpeg' 
+            './img/produtos/donuts1.jpeg' 
         ]
     },  
     {
@@ -734,7 +734,7 @@ const produtos = [
         categoria: 12,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/fondue1.jpeg' 
+            './img/produtos/fondue1.jpeg' 
         ]
     },  
     {
@@ -745,9 +745,9 @@ const produtos = [
         categoria: 12,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/barra_escrita1.jpeg',
-            '../img/produtos/barra_escrita2.jpeg',
-            '../img/produtos/barra_escrita3.jpeg'
+            './img/produtos/barra_escrita1.jpeg',
+            './img/produtos/barra_escrita2.jpeg',
+            './img/produtos/barra_escrita3.jpeg'
         ]
     },  
     {
@@ -758,7 +758,7 @@ const produtos = [
         categoria: 13,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/roleta_felicidade1.jpeg' 
+            './img/produtos/roleta_felicidade1.jpeg' 
         ]
     },  
     {
@@ -769,8 +769,8 @@ const produtos = [
         categoria: 13,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cerveja_trufas1.jpeg',
-            '../img/produtos/cerveja_trufas2.jpeg'
+            './img/produtos/cerveja_trufas1.jpeg',
+            './img/produtos/cerveja_trufas2.jpeg'
         ]
     },  
     {
@@ -781,7 +781,7 @@ const produtos = [
         categoria: 13,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/urso_trufado1.jpeg' 
+            './img/produtos/urso_trufado1.jpeg' 
         ]
     },  
     {
@@ -792,7 +792,7 @@ const produtos = [
         categoria: 2,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/bombom_rosa1.jpeg' 
+            './img/produtos/bombom_rosa1.jpeg' 
         ]
     },  
     {
@@ -803,7 +803,7 @@ const produtos = [
         categoria: 10,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/cento_brownie1.jpeg' 
+            './img/produtos/cento_brownie1.jpeg' 
         ]
     },  
     {
@@ -814,7 +814,7 @@ const produtos = [
         categoria: 10,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/fatia_brownie1.jpeg' 
+            './img/produtos/fatia_brownie1.jpeg' 
         ]
     },  
     {
@@ -825,7 +825,7 @@ const produtos = [
         categoria: 10,
         disponibilidade: true,
         imagens: [ 
-            '../img/produtos/brownie_escrita1.jpeg' 
+            './img/produtos/brownie_escrita1.jpeg' 
         ]
     },  
     
