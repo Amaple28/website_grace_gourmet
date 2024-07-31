@@ -138,8 +138,11 @@ h6,
 }
 
 .hero-header {
-    background: url(../img/hero.jpg) top right no-repeat;
+    background: url(../img/capa.png) top right no-repeat;
     background-size: cover;
+    /* alinhar background ao bottom */
+    background-position: center bottom;
+
 }
 
 .btn-play {
@@ -405,4 +408,13 @@ td{
     border-radius: 50%;
     font-size: 15px;
     transition: .5s;   
+}
+
+.text-shadow{
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.about-capa{
+    object-position: right bottom;
+    object-fit: cover; 
 }

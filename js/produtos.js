@@ -135,8 +135,7 @@ const produtos = [
         disponibilidade: true,
         imagens: [ 
             './img/produtos/bombom_morango1.jpeg',
-            './img/produtos/bombom_morango2.jpeg',
-            './img/produtos/bombom_morango3.jpeg'
+            './img/produtos/bombom_morango2.jpeg'
         ]
     },
     {
@@ -1056,3 +1055,60 @@ function abrirModalCarrinho() {
     const modal = new bootstrap.Modal(document.getElementById('checkoutModal'));
     modal.show();
 }
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const div_produtos_sortidos = document.querySelector('#produtos-sortidos');
+    div_produtos_sortidos.innerHTML = '';
+
+    const produtos_sortidos = [];
+    while (produtos_sortidos.length < 3) {
+        const produto = produtos[Math.floor(Math.random() * produtos.length)];
+        if (!produtos_sortidos.includes(produto)) {
+            produtos_sortidos.push(produto);
+        }
+    }
+    
+    produtos_sortidos.forEach(produto => {
+        const div = document.createElement('div');
+        div.classList.add('col-lg-4', 'col-sm-12', 'py-2');
+        const carrosselId = `carousel${produto.id}`;
+
+        div.innerHTML = `
+            <div class="d-flex h-100 w-100">
+                <div class="flex-shrink-0">
+                    <!-- Carrossel de Imagens -->
+                    <div id="${carrosselId}" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            ${produto.imagens.map((imagem, index) => `
+                                <button type="button" data-bs-target="#${carrosselId}" data-bs-slide-to="${index}" ${index === 0 ? 'class="active"' : ''} aria-current="true" aria-label="Slide ${index + 1}"></button>
+                            `).join('')}
+                        </div>
+                        <div class="carousel-inner">
+                            ${produto.imagens.map((imagem, index) => `
+                                <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                                    <img src="${imagem}" class="d-block w-100 img-fluid fixed-size" alt="${produto.nome}">
+                                </div>
+                            `).join('')}
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#${carrosselId}" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#${carrosselId}" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <h4 class="bg-dark text-primary p-2 m-0">${produto.valor}</h4>
+                </div>
+                <div class="w-100 d-flex flex-column justify-content-center text-start bg-secondary border-inner border-inner-dark px-4">
+                    <h6 class="mt-3"><b>${produto.nome}</b></h6>
+                    <span>${produto.descricao}</span>
+                </div>
+            </div>
+        `;
+        div_produtos_sortidos.appendChild(div);
+    });
+});

@@ -63,3 +63,9 @@
 //     valor_total.textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
 // }
 
+
+
+function enviarPedido(){
+    //enviar pedido para o whatsapp 
+    window.open("https://wa.me/5531991805907?text=PedidoGrace Gourmet");
+}
