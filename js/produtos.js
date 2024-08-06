@@ -95,7 +95,7 @@ const produtos = [
     {
         id: 4,
         nome: 'Trio Cremoso',
-        valor: 'R$ 13,00',
+        valor: 'R$ 13,99',
         descricao: '',
         categoria: 20,
         disponibilidade: true,
@@ -117,7 +117,7 @@ const produtos = [
     {
         id: 6,
         nome: 'Trufas',
-        valor: 'R$ 4,00',
+        valor: 'R$ 4,99',
         descricao: '',
         categoria: 2,
         disponibilidade: true,
@@ -129,7 +129,7 @@ const produtos = [
     {
         id: 7,
         nome: 'Bombom de Morango',
-        valor: 'R$ 12,00',
+        valor: 'R$ 12,99',
         descricao: '',
         categoria: 2,
         disponibilidade: true,
@@ -141,7 +141,7 @@ const produtos = [
     {
         id: 8,
         nome: 'Coxinha de Morango',
-        valor: 'R$ 9,00',
+        valor: 'R$ 9,99',
         descricao: '',
         categoria: 2,
         disponibilidade: true,
@@ -152,7 +152,7 @@ const produtos = [
     {
         id: 9,
         nome: 'Espetinho de Morango',
-        valor: 'R$ 12,00',
+        valor: 'R$ 12,99',
         descricao: '',
         categoria: 2,
         disponibilidade: true,
@@ -163,7 +163,7 @@ const produtos = [
     {
         id: 10,
         nome: 'Copo Premium da Casa',
-        valor: 'R$ 13,00',
+        valor: 'R$ 13,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -174,7 +174,7 @@ const produtos = [
     {
         id: 11,
         nome: 'Copo Cenourita',
-        valor: 'R$ 14,00',
+        valor: 'R$ 14,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -262,7 +262,7 @@ const produtos = [
     {
         id: 19,
         nome: 'Afogadinho de Morango',
-        valor: 'R$ 11,00',
+        valor: 'R$ 11,99',
         descricao: '',
         categoria: 4,
         disponibilidade: true,
@@ -273,7 +273,7 @@ const produtos = [
     {
         id: 20,
         nome: 'Afogadinho de Brownie',
-        valor: 'R$ 14,00',
+        valor: 'R$ 14,99',
         descricao: '',
         categoria: 4,
         disponibilidade: true,
@@ -284,7 +284,7 @@ const produtos = [
     {
         id: 21,
         nome: 'Trufadinho de Maracujá',
-        valor: 'R$ 13,00',
+        valor: 'R$ 13,99',
         descricao: '',
         categoria: 5,
         disponibilidade: true,
@@ -295,7 +295,7 @@ const produtos = [
     {
         id: 22,
         nome: 'Trufadinho de Uva',
-        valor: 'R$ 13,00',
+        valor: 'R$ 13,99',
         descricao: '',
         categoria: 5,
         disponibilidade: true,
@@ -306,7 +306,7 @@ const produtos = [
     {
         id: 23,
         nome: 'Trufadinho de Morango',
-        valor: 'R$ 13,00',
+        valor: 'R$ 13,99',
         descricao: '',
         categoria: 5,
         disponibilidade: true,
@@ -328,7 +328,7 @@ const produtos = [
     {
         id: 25,
         nome: 'Pudim de Paçoca',
-        valor: 'R$ 6,00',
+        valor: 'R$ 6,99',
         descricao: '',
         categoria: 6,
         disponibilidade: true,
@@ -339,7 +339,7 @@ const produtos = [
     {
         id: 26,
         nome: 'Pudim de Chocolate',
-        valor: 'R$ 6,00',
+        valor: 'R$ 6,99',
         descricao: '',
         categoria: 6,
         disponibilidade: true,
@@ -350,7 +350,7 @@ const produtos = [
     {
         id: 27,
         nome: 'Torta Josefina',
-        valor: 'R$ 55,00',
+        valor: 'R$ 55,99',
         descricao: '',
         categoria: 7,
         disponibilidade: true,
@@ -361,7 +361,7 @@ const produtos = [
     {
         id: 28,
         nome: 'Torta de Brigadeiro com Morango',
-        valor: 'R$ 55,00',
+        valor: 'R$ 55,99',
         descricao: '',
         categoria: 7,
         disponibilidade: true,
@@ -372,7 +372,7 @@ const produtos = [
     {
         id: 29,
         nome: 'Torta de Ninho com Geleia de Morango',
-        valor: 'R$ 55,00',
+        valor: 'R$ 55,99',
         descricao: '',
         categoria: 7,
         disponibilidade: true,
@@ -383,7 +383,7 @@ const produtos = [
     {
         id: 30,
         nome: 'Torta Supreme Brownie',
-        valor: 'R$ 60,00',
+        valor: 'R$ 60,99',
         descricao: '',
         categoria: 7,
         disponibilidade: true,
@@ -394,7 +394,7 @@ const produtos = [
     {
         id: 31,
         nome: 'Torta de Maracujá com Brigadeiro e Brownie',
-        valor: 'R$ 60,00',
+        valor: 'R$ 60,99',
         descricao: '',
         categoria: 7,
         disponibilidade: true,
@@ -405,7 +405,7 @@ const produtos = [
     {
         id: 32,
         nome: 'Bolo no Pote Dois Amores',
-        valor: 'R$ 7,00',
+        valor: 'R$ 7,99',
         descricao: '',
         categoria: 8,
         disponibilidade: true,
@@ -417,7 +417,7 @@ const produtos = [
     {
         id: 33,
         nome: 'Bolo no Pote Ninho',
-        valor: 'R$ 7,00',
+        valor: 'R$ 7,99',
         descricao: '',
         categoria: 8,
         disponibilidade: true,
@@ -429,7 +429,7 @@ const produtos = [
     {
         id: 34,
         nome: 'Bolo no Pote Ninho com Geleia de Morango',
-        valor: 'R$ 7,00',
+        valor: 'R$ 7,99',
         descricao: '',
         categoria: 8,
         disponibilidade: true,
@@ -441,7 +441,7 @@ const produtos = [
     {
         id: 35,
         nome: 'Bolo no Pote Chocolatudo',
-        valor: 'R$ 7,00',
+        valor: 'R$ 7,99',
         descricao: '',
         categoria: 8,
         disponibilidade: true,
@@ -453,7 +453,7 @@ const produtos = [
     {
         id: 36,
         nome: 'Bolo no Pote de Paçoca',
-        valor: 'R$ 7,00',
+        valor: 'R$ 7,99',
         descricao: '',
         categoria: 8,
         disponibilidade: true,
@@ -465,7 +465,7 @@ const produtos = [
     {
         id: 37,
         nome: 'Bolo no Pote de Ninho com Morango',
-        valor: 'R$ 7,00',
+        valor: 'R$ 7,99',
         descricao: '',
         categoria: 8,
         disponibilidade: true,
@@ -477,7 +477,7 @@ const produtos = [
     {
         id: 38,
         nome: 'Cone Trufado de Ninho',
-        valor: 'R$ 9,00',
+        valor: 'R$ 9,99',
         descricao: '',
         categoria: 9,
         disponibilidade: true,
@@ -488,7 +488,7 @@ const produtos = [
     {
         id: 39,
         nome: 'Cone Trufado de Brigadeiro',
-        valor: 'R$ 9,00',
+        valor: 'R$ 9,99',
         descricao: '',
         categoria: 9,
         disponibilidade: true,
@@ -499,7 +499,7 @@ const produtos = [
     {
         id: 40,
         nome: 'Cone Trufado de Paçoca',
-        valor: 'R$ 9,00',
+        valor: 'R$ 9,99',
         descricao: '',
         categoria: 9,
         disponibilidade: true,
@@ -510,7 +510,7 @@ const produtos = [
     {
         id: 41,
         nome: 'Cone Trufado Kinder Bueno',
-        valor: 'R$ 9,00',
+        valor: 'R$ 9,99',
         descricao: '',
         categoria: 9,
         disponibilidade: true,
@@ -521,7 +521,7 @@ const produtos = [
     {
         id: 42,
         nome: 'Cone Trufado de Mousse de Maracujá',
-        valor: 'R$ 9,00',
+        valor: 'R$ 9,99',
         descricao: '',
         categoria: 9,
         disponibilidade: true,
@@ -565,7 +565,7 @@ const produtos = [
     {
         id: 46,
         nome: 'Sanduba de Brownie com Ninho',
-        valor: 'R$ 12,00',
+        valor: 'R$ 12,99',
         descricao: '',
         categoria: 10,
         disponibilidade: true,
@@ -577,7 +577,7 @@ const produtos = [
     {
         id: 47,
         nome: 'Sanduba de Brownie com Doce de Leite',
-        valor: 'R$ 12,00',
+        valor: 'R$ 12,99',
         descricao: '',
         categoria: 10,
         disponibilidade: true,
@@ -589,7 +589,7 @@ const produtos = [
     {
         id: 48,
         nome: 'Sanduba de Brownie com Brigadeiro',
-        valor: 'R$ 12,00',
+        valor: 'R$ 12,99',
         descricao: '',
         categoria: 10,
         disponibilidade: true,
@@ -601,7 +601,7 @@ const produtos = [
     {
         id: 49,
         nome: 'Sanduba de Brownie com Ninho e Nutella',
-        valor: 'R$ 13,00',
+        valor: 'R$ 13,99',
         descricao: '',
         categoria: 10,
         disponibilidade: true,
@@ -613,7 +613,7 @@ const produtos = [
     {
         id: 50,
         nome: 'Brownie',
-        valor: 'R$ 8,00',
+        valor: 'R$ 8,99',
         descricao: '',
         categoria: 10,
         disponibilidade: true,
@@ -624,7 +624,7 @@ const produtos = [
     {
         id: 51,
         nome: 'Barra Trufada de Ninho',
-        valor: 'R$ 15,00',
+        valor: 'R$ 15,99',
         descricao: '',
         categoria: 11,
         disponibilidade: true,
@@ -636,7 +636,7 @@ const produtos = [
     {
         id: 52,
         nome: 'Barra Trufada de Brigadeiro',
-        valor: 'R$ 15,00',
+        valor: 'R$ 15,99',
         descricao: '',
         categoria: 11,
         disponibilidade: true,
@@ -648,7 +648,7 @@ const produtos = [
     {
         id: 53,
         nome: 'Barra Trufada Mousse de Maracujá',
-        valor: 'R$ 15,00',
+        valor: 'R$ 15,99',
         descricao: '',
         categoria: 11,
         disponibilidade: true,
@@ -660,7 +660,7 @@ const produtos = [
     {
         id: 54,
         nome: 'Barra Trufada de Brigadeiro com Morango',
-        valor: 'R$ 17,00',
+        valor: 'R$ 17,99',
         descricao: '',
         categoria: 11,
         disponibilidade: true,
@@ -672,7 +672,7 @@ const produtos = [
     {
         id: 55,
         nome: 'Barra Trufada de Ninho com Morango',
-        valor: 'R$ 17,00',
+        valor: 'R$ 17,99',
         descricao: '',
         categoria: 11,
         disponibilidade: true,
@@ -728,7 +728,7 @@ const produtos = [
     {
         id: 60,
         nome: 'Fondue Grace Gourmet',
-        valor: 'R$ 28,00',
+        valor: 'R$ 28,99',
         descricao: '',
         categoria: 12,
         disponibilidade: true,
@@ -739,7 +739,7 @@ const produtos = [
     {
         id: 61,
         nome: 'Barras com Escritas',
-        valor: 'R$ 49,00',
+        valor: 'R$ 49,99',
         descricao: '',
         categoria: 12,
         disponibilidade: true,
@@ -752,7 +752,7 @@ const produtos = [
     {
         id: 62,
         nome: 'Roleta da Felicidade',
-        valor: 'R$ 35,00',
+        valor: 'R$ 35,99',
         descricao: '',
         categoria: 13,
         disponibilidade: true,
@@ -763,7 +763,7 @@ const produtos = [
     {
         id: 63,
         nome: 'Caixa Kit Cerveja com Trufas',
-        valor: 'R$ 49,00',
+        valor: 'R$ 49,99',
         descricao: '',
         categoria: 13,
         disponibilidade: true,
@@ -819,7 +819,7 @@ const produtos = [
     {
         id: 68,
         nome: 'Brownie com Escrita Amor',
-        valor: 'R$ 15,00',
+        valor: 'R$ 15,99',
         descricao: '',
         categoria: 10,
         disponibilidade: true,
