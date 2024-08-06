@@ -1026,7 +1026,11 @@ function renderizarCarrinho() {
     document.querySelectorAll('.input-quantidade').forEach(input => {
         input.addEventListener('change', (event) => {
             const novoValor = parseInt(event.target.value);
-            alterarQuantidade(event.target.dataset.id, novoValor - carrinho.find(item => item.id === event.target.dataset.id).quantidade);
+            const produtoID = event.target.dataset.id;
+            const produto = carrinho.find(item => item.id === produtoID);
+            if (produto) {
+                alterarQuantidade(produtoID, novoValor - produto.quantidade);
+            }
         });
     });
 }
