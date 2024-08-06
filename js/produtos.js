@@ -267,7 +267,7 @@ const produtos = [
         categoria: 4,
         disponibilidade: true,
         imagens: [ 
-            '' 
+            './img/produtos/afogadinho_morango1.png' 
         ]
     }, 
     {
@@ -289,7 +289,7 @@ const produtos = [
         categoria: 5,
         disponibilidade: true,
         imagens: [ 
-            '' 
+            './img/produtos/trufadinho1.png' 
         ]
     }, 
     {
@@ -300,7 +300,7 @@ const produtos = [
         categoria: 5,
         disponibilidade: true,
         imagens: [ 
-            '' 
+            './img/produtos/trufadinho1.png'  
         ]
     }, 
     {
@@ -311,7 +311,7 @@ const produtos = [
         categoria: 5,
         disponibilidade: true,
         imagens: [ 
-            '' 
+            './img/produtos/trufadinho1.png'  
         ]
     }, 
     {
@@ -333,7 +333,7 @@ const produtos = [
         categoria: 6,
         disponibilidade: true,
         imagens: [ 
-            '' 
+            './img/produtos/pudim1.jpeg'  
         ]
     }, 
     {
@@ -344,7 +344,7 @@ const produtos = [
         categoria: 6,
         disponibilidade: true,
         imagens: [ 
-            '' 
+            './img/produtos/pudim1.jpeg'  
         ]
     }, 
     {
@@ -355,7 +355,8 @@ const produtos = [
         categoria: 7,
         disponibilidade: true,
         imagens: [ 
-            '' 
+            './img/produtos/torta1.png', 
+            './img/produtos/torta2.png' 
         ]
     }, 
     {
@@ -366,7 +367,8 @@ const produtos = [
         categoria: 7,
         disponibilidade: true,
         imagens: [ 
-            '' 
+            './img/produtos/torta2.png', 
+            './img/produtos/torta1.png' 
         ]
     }, 
     {
@@ -377,7 +379,8 @@ const produtos = [
         categoria: 7,
         disponibilidade: true,
         imagens: [ 
-            '' 
+            './img/produtos/torta1.png', 
+            './img/produtos/torta2.png' 
         ]
     }, 
     {
@@ -388,7 +391,8 @@ const produtos = [
         categoria: 7,
         disponibilidade: true,
         imagens: [ 
-            '' 
+            './img/produtos/torta1.png', 
+            './img/produtos/torta2.png' 
         ]
     }, 
     {
@@ -399,7 +403,8 @@ const produtos = [
         categoria: 7,
         disponibilidade: true,
         imagens: [ 
-            '' 
+            './img/produtos/torta2.png', 
+            './img/produtos/torta1.png' 
         ]
     }, 
     {
@@ -629,6 +634,7 @@ const produtos = [
         categoria: 11,
         disponibilidade: true,
         imagens: [ 
+            './img/produtos/barra_trufada4.jpeg',
             './img/produtos/barra_trufada1.jpeg',
             './img/produtos/barra_trufada2.jpeg'
         ]
@@ -641,6 +647,7 @@ const produtos = [
         categoria: 11,
         disponibilidade: true,
         imagens: [ 
+            './img/produtos/barra_trufada4.jpeg',
             './img/produtos/barra_trufada1.jpeg',
             './img/produtos/barra_trufada2.jpeg'
         ]
@@ -653,6 +660,7 @@ const produtos = [
         categoria: 11,
         disponibilidade: true,
         imagens: [ 
+            './img/produtos/barra_trufada4.jpeg',
             './img/produtos/barra_trufada1.jpeg',
             './img/produtos/barra_trufada2.jpeg'
         ]
@@ -665,6 +673,7 @@ const produtos = [
         categoria: 11,
         disponibilidade: true,
         imagens: [ 
+            './img/produtos/barra_trufada4.jpeg',
             './img/produtos/barra_trufada1.jpeg',
             './img/produtos/barra_trufada2.jpeg'
         ]
@@ -677,6 +686,7 @@ const produtos = [
         categoria: 11,
         disponibilidade: true,
         imagens: [ 
+            './img/produtos/barra_trufada4.jpeg',
             './img/produtos/barra_trufada3.jpeg', 
             './img/produtos/barra_trufada2.jpeg'
         ]
@@ -822,7 +832,7 @@ const produtos = [
         valor: 'R$ 15,99',
         descricao: '',
         categoria: 10,
-        disponibilidade: true,
+        disponibilidade: false,
         imagens: [ 
             './img/produtos/brownie_escrita1.jpeg' 
         ]
@@ -918,9 +928,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="d-flex flex-column justify-content-between text-start bg-secondary border-inner border-inner-dark px-4">
                         <p class="mt-3"><b>${produto.nome}</b></p>
                         <span>${produto.descricao}</span>
-                        <button class="btn btn-primary btn-sm mb-3" onclick="adicionarAoCarrinho(${produto.id})">
-                            <i class="bi bi-cart-plus"></i> Adicionar ao carrinho
-                        </button>
+                        ${produto.disponibilidade ? `
+                            <button class="btn btn-primary btn-sm mb-3" onclick="adicionarAoCarrinho(${produto.id})"> <i class="bi bi-cart-plus"></i> Adicionar ao carrinho </button>
+                        ` : ` 
+                            <button class="btn btn-dark btn-sm mb-3" disabled> <i class="fas fa-ban"></i> Produto Indisponível </button>
+                        `}
                     </div>
                 </div>
             `;

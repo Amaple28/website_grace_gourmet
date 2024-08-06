@@ -69,3 +69,45 @@ function enviarPedido(){
     //enviar pedido para o whatsapp 
     window.open("https://wa.me/5531991805907?text=PedidoGrace Gourmet");
 }
+
+// ao abrir tela verificar se loja esta berta ou fechada pra escrever na div class horario-func
+document.addEventListener('DOMContentLoaded', () => {
+    const horario_func = document.querySelector('.horario-func');
+    const data = new Date();
+    const dia_semana = data.getDay();
+    const hora = data.getHours();
+    const minuto = data.getMinutes();
+
+    const horario_func_loja = [
+        { dia: 0, abertura: 0, fechamento: 18 },
+        { dia: 1, abertura: 8, fechamento: 18 },
+        { dia: 2, abertura: 8, fechamento: 18 },
+        { dia: 3, abertura: 8, fechamento: 18 },
+        { dia: 4, abertura: 8, fechamento: 18 },
+        { dia: 5, abertura: 8, fechamento: 12 },
+        { dia: 6, abertura: 0, fechamento: 0 }
+    ]
+
+    let conteudo_loja_fechada =`<span class="badge bg-danger  rounded-3">Fechado</span>
+                    Loja Fechada no Momento 
+                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#horarioFuncModal"> 
+                        <i class="fas fa-info-circle"></i>
+                    </button>`;		
+    
+    let conteudo_loja_aberta = `<span class="badge bg-success  rounded-3">Aberto</span>
+                    Loja Aberta no Momento 
+                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#horarioFuncModal"> 
+                        <i class="fas fa-info-circle"></i>
+                    </button>`;	
+
+    //verificar se loja esta aberta ou fechada
+    horario_func_loja.forEach(horario => {
+        if (horario.dia == dia_semana) {
+            if (hora >= horario.abertura && hora < horario.fechamento) {
+                horario_func.innerHTML = conteudo_loja_aberta;
+            } else {
+                horario_func.innerHTML = conteudo_loja_fechada;
+            }
+        }
+    });
+});

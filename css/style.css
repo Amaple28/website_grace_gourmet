@@ -136,6 +136,10 @@ h6,
     background-color: #fff;
 }
 
+.nav-pills{
+    font-size: smaller;
+}
+
 .logo-nav{
     padding: 0 20px; 
     border: 1px solid var(--light);
@@ -424,4 +428,8 @@ td{
 .about-capa{
     object-position: right bottom;
     object-fit: cover; 
+}
+
+.table-text-right thead th, .table-text-right tbody td {
+    text-align: left;
 }
