@@ -8,8 +8,10 @@ function sendMessage(){
     var mensagem = document.getElementById("mensagem").value;
 
     // montar a mensagem com quebrar de linha e personalização de texto com emojis e negrito se possível
-    var messageToSend = "Olá, meu nome é " + nome + ". \n\n \n\n" +" *Gostaria de mais informações sobre:* "+assunto +". \n\n \n\n" +"*Pedido:* " + pedido + ". \n\n \n\n" +  mensagem;
-    
+    var messageToSend = `Olá, meu nome é `+ nome + `. \n`;
+    messageToSend += ` *Gostaria de mais informações sobre:* `+assunto +`. \n`; 
+    messageToSend += `*Pedido:* ` + pedido + `.\n\n\n`; 
+    messageToSend += mensagem; 
 
     // enviar a mensagem
     window.open("https://wa.me/5531991805907?text=" + messageToSend);
