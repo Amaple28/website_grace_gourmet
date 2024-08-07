@@ -877,24 +877,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const tab = document.querySelector(`#tab-${produto.categoria}`);
         if (tab) {
             const div = document.createElement('div');
-            div.classList.add('col-12', 'col-md-4', 'col-sm-12', 'py-2');
-            // div.innerHTML = ` 
-            //     <div class="d-flex h-100 w-100">
-            //         <div class="flex-shrink-0">
-            //             <img class="img-fluid" src="${produto.imagens[0]}" alt="${produto.nome}" style="width: 200px; height: 200px;">
-                        
-            //             <h4 class="bg-dark text-primary p-2 m-0">${produto.valor}</h4>
-            //         </div>
-            //         <div class="d-flex flex-column justify-content-between text-start bg-secondary border-inner border-inner-dark px-4">
-            //             <p class="mt-3"><b>${produto.nome}</b></p>
-            //             <span>${produto.descricao}</span>
-            //             <button class="btn btn-primary btn-sm mb-3">
-            //                 <i class="bi bi-cart-plus"></i> Adicionar ao carrinho
-            //             </button>
-            //         </div>
-            //     </div> 
-            // `;
-
+            div.classList.add('col-12', 'col-md-4', 'col-sm-12', 'py-2'); 
             const carrosselId = `carousel${produto.id}`;
 
             div.innerHTML = `
@@ -944,121 +927,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// function adicionarAoCarrinho(produtoID){
-//     const produto = produtos.find(p => p.id === produtoID);
+
+// function alterarQuantidade(produtoID, quantidade) {
 //     const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 //     const itemCarrinho = carrinho.find(item => item.id === produtoID);
 //     if (itemCarrinho) {
-//         itemCarrinho.quantidade++;
-//     } else {
-//         carrinho.push({
-//             id: produto.id,
-//             nome: produto.nome,
-//             valor: produto.valor,
-//             quantidade: 1
-//         });
+//         itemCarrinho.quantidade += quantidade;
+//         if (itemCarrinho.quantidade <= 0) {
+//             carrinho.splice(carrinho.indexOf(itemCarrinho), 1);
+//         }
 //     }
+//     localStorage.setItem('carrinho', JSON.stringify(carrinho));
+//     renderizarCarrinho();
 // }
-document.addEventListener('DOMContentLoaded', function() {
-    renderizarCarrinho();
-});
-
-function adicionarAoCarrinho(produtoID) {
-    const produto = produtos.find(p => p.id === produtoID);
-    const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-    const itemCarrinho = carrinho.find(item => item.id === produtoID);
-    if (itemCarrinho) {
-        itemCarrinho.quantidade++;
-    } else {
-        carrinho.push({
-            id: produto.id,
-            nome: produto.nome,
-            valor: produto.valor,
-            quantidade: 1
-        });
-    }
-    localStorage.setItem('carrinho', JSON.stringify(carrinho));
-    renderizarCarrinho();
-    abrirModalCarrinho();
-}
-
-function renderizarCarrinho() {
-    const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-    const tbody = document.querySelector('#carrinho-tbody');
-    
-    if (!tbody) {
-        console.error('Elemento #carrinho-tbody não encontrado.');
-        return;
-    }
-
-    tbody.innerHTML = '';
-
-    let total = 0;
-
-    carrinho.forEach(produto => {
-        const subtotal = produto.valor * produto.quantidade;
-        total += subtotal;
-
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-            <td class="nome">${produto.nome}</td>
-            <td class="valor-un">${produto.valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
-            <td class="qtd-produto">
-                <button class="btn btn-outline-primary btn-sm btn-decrementar" data-id="${produto.id}">-</button>
-                <input type="number" value="${produto.quantidade}" min="1" data-id="${produto.id}" class="input-quantidade">
-                <button class="btn btn-outline-primary btn-sm btn-incrementar" data-id="${produto.id}">+</button>
-            </td>
-            <td><button class="btn btn-outline-danger btn-sm btn-remover" data-id="${produto.id}">&times;</button></td>
-        `;
-
-        tbody.appendChild(tr);
-    });
-
-    // Atualiza o total do pedido
-    const totalPedido = document.querySelector('.valor-total-pedido');
-    if (totalPedido) {
-        totalPedido.textContent = total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    } else {
-        console.error('Elemento .valor-total-pedido não encontrado.');
-    }
-
-    // Adiciona eventos aos botões de incremento, decremento e remover
-    document.querySelectorAll('.btn-decrementar').forEach(button => {
-        button.addEventListener('click', (event) => alterarQuantidade(event.target.dataset.id, -1));
-    });
-
-    document.querySelectorAll('.btn-incrementar').forEach(button => {
-        button.addEventListener('click', (event) => alterarQuantidade(event.target.dataset.id, 1));
-    });
-
-    document.querySelectorAll('.btn-remover').forEach(button => {
-        button.addEventListener('click', (event) => removerDoCarrinho(event.target.dataset.id));
-    });
-
-    document.querySelectorAll('.input-quantidade').forEach(input => {
-        input.addEventListener('change', (event) => {
-            const novoValor = parseInt(event.target.value);
-            const produtoID = event.target.dataset.id;
-            const produto = carrinho.find(item => item.id === produtoID);
-            if (produto) {
-                alterarQuantidade(produtoID, novoValor - produto.quantidade);
-            }
-        });
-    });
-}
-
-function alterarQuantidade(produtoID, quantidade) {
-    const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-    const itemCarrinho = carrinho.find(item => item.id === produtoID);
-    if (itemCarrinho) {
-        itemCarrinho.quantidade += quantidade;
-        if (itemCarrinho.quantidade <= 0) {
-            carrinho.splice(carrinho.indexOf(itemCarrinho), 1);
-        }
-    }
-    localStorage.setItem('carrinho', JSON.stringify(carrinho));
-    renderizarCarrinho();
-}
 
 function removerDoCarrinho(produtoID) {
     const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
@@ -1067,13 +948,15 @@ function removerDoCarrinho(produtoID) {
     renderizarCarrinho();
 }
 
+
+////////////////////////////
 function abrirModalCarrinho() {
     const modal = new bootstrap.Modal(document.getElementById('checkoutModal'));
     modal.show();
 }
 
 
-
+////////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', () => {
     const div_produtos_sortidos = document.querySelector('#produtos-sortidos');
     div_produtos_sortidos.innerHTML = '';

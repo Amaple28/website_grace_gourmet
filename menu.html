@@ -57,7 +57,7 @@
     <!-- Button Checkout -->  
     <button type="button" class="btn btn-primary btn-lg btn-checkout" data-bs-toggle="modal" data-bs-target="#checkoutModal">
         <i class="bi bi-cart"></i>
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="carrinho-contagem">
             0
             <span class="visually-hidden">Produtos</span>
         </span>
@@ -77,24 +77,12 @@
                         <thead>
                             <tr>
                                 <th>Produto</th>
-                                <th>Preço</th>
-                                <th style="text-center">Qtd.</th> 
+                                <th>Preço Un</th>
+                                <th style="text-center">Qtd</th> 
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody id="carrinho-tbody">
-                            <!-- <tr>
-                                <td class="nome">Bolo</td>
-                                <td class="valor-un">R$ 34,00</td>
-                                <td id="qtd-produto" class="qtd-produto">
-                                    <button class="btn btn-outline-primary btn-sm" id="btn-decrementar">-</button>
-                                    <input type="number" value="1" min="1">
-                                    <button class="btn btn-outline-primary btn-sm" id="btn-incrementar">+</button>
-                                </td>
-                                <td class="valor-total">R$ 34,00</td>
-                                <td><button class="btn btn-outline-danger btn-sm" id="btn-remover">&times;</button></td>
-                            </tr> --> 
-                            
+                        <tbody id="carrinho-tbody"> 
                         </tbody>
                         <tfoot>
                             <tr>
@@ -110,7 +98,7 @@
                             <i class="bi bi-arrow-left"></i>
                             Continuar Comprando
                         </button>
-                        <button class="btn btn-success" onclick="enviarPedido()">
+                        <button class="btn btn-success" onclick="enviarPedido()" id="btn-realizar-pedido">
                             Realizar Pedido
                             <i class="fab fa-whatsapp ml-2"></i>
                         </button>
@@ -178,20 +166,20 @@
     <div class="container-fluid about py-3">
         <div class="container">
             <div class=" position-relative mx-auto mb-3">
-                <span class="badge bg-primary p-2 rounded-3 mb-2">
+                <span class="badge bg-primary p-2 rounded-3 mb-2 inicio-menu">
                     Seja bem vindo(a) a Doceria Grace Gourmet. Temos opções maravilhosas para levar um pedacinho de felicidade até você. Faça seu pedido adicionando os produtos abaixo no carrinho! ⬇️
                 </span>
                 <p class="text-primary fw-bold mb-2 horario-func"> 
                 </p>
                 <h6>
-                    Pedido mínimo de R$ 30,00.
+                    Pedido mínimo de R$ 15,00.
                 </h6>
 
             </div>
-            <div class="tab-class text-center">
+            <div class="tab-class text-center w-100">
                 <ul class="nav nav-pills d-inline-flex justify-content-center bg-primary text-uppercase border-inner p-4 mb-3" id="categorias">
                 </ul>
-                <div class="tab-content" id="produtos">
+                <div class="tab-content w-100" id="produtos">
                 </div>
             </div>
         </div>

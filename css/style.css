@@ -366,8 +366,13 @@ td{
 .qtd-produto{
     display: flex;
     justify-content: center;  
-    width:90px;
+    margin-top: 5px;
+    gap:2px;
+}
 
+.valor-un{ 
+    font-weight: 600; 
+    width: 100px;
 }
 
 .qtd-produto input{
@@ -402,16 +407,18 @@ td{
     z-index: 99;
 }
 
+tbody tr td{
+    border:none !important;
+}
+
 .btn-incrementar,
 .btn-decrementar { 
-    border: none; 
-    border-radius: 50%;
-    font-size: 15px;
+    border: none;  
+    font-size: 18px;
     transition: .5s;   
 }
 
-.input-quantidade{
-    width: 45px !important;
+.input-quantidade{ 
     text-align: center; 
 }
 
@@ -432,4 +439,12 @@ td{
 
 .table-text-right thead th, .table-text-right tbody td {
     text-align: left;
+}
+
+.inicio-menu{ 
+    white-space: normal;
+}
+
+.tab-content{
+    width: 100%;
 }
