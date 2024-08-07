@@ -926,37 +926,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-
-// function alterarQuantidade(produtoID, quantidade) {
-//     const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-//     const itemCarrinho = carrinho.find(item => item.id === produtoID);
-//     if (itemCarrinho) {
-//         itemCarrinho.quantidade += quantidade;
-//         if (itemCarrinho.quantidade <= 0) {
-//             carrinho.splice(carrinho.indexOf(itemCarrinho), 1);
-//         }
-//     }
-//     localStorage.setItem('carrinho', JSON.stringify(carrinho));
-//     renderizarCarrinho();
-// }
-
-function removerDoCarrinho(produtoID) {
-    const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-    const novoCarrinho = carrinho.filter(item => item.id !== produtoID);
-    localStorage.setItem('carrinho', JSON.stringify(novoCarrinho));
-    renderizarCarrinho();
-}
-
-
-////////////////////////////
-function abrirModalCarrinho() {
-    const modal = new bootstrap.Modal(document.getElementById('checkoutModal'));
-    modal.show();
-}
-
-
-////////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', () => {
     const div_produtos_sortidos = document.querySelector('#produtos-sortidos');
     div_produtos_sortidos.innerHTML = '';

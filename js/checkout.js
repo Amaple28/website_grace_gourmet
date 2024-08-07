@@ -162,12 +162,10 @@ function atualizarQuantidadeCarrinho() {
     document.getElementById('carrinho-contagem').textContent = totalItens;
 }
 
-
-function enviarPedido(){
-    //enviar pedido para o whatsapp 
-    window.open("https://wa.me/5531991805907?text=PedidoGrace Gourmet");
+function abrirModalCarrinho() {
+    const modal = new bootstrap.Modal(document.getElementById('checkoutModal'));
+    modal.show();
 }
-
 
 // ao abrir tela verificar se loja esta berta ou fechada pra escrever na div class horario-func
 document.addEventListener('DOMContentLoaded', () => {
@@ -189,14 +187,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let conteudo_loja_fechada =`<span class="badge bg-danger  rounded-3">Fechado</span>
                     Loja Fechada no Momento 
-                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#horarioFuncModal"> 
-                        <i class="fas fa-info-circle"></i>
+                    <button class="btn btn-sm btn-primary rounded-3" data-bs-toggle="modal" data-bs-target="#horarioFuncModal"> 
+                        <i class="fas fa-clock fa-sm"></i>
                     </button>`;		
     
-    let conteudo_loja_aberta = `<span class="badge bg-success  rounded-3">Aberto</span>
+    let conteudo_loja_aberta = `<span class="badge bg-success rounded-3">Aberto</span>
                     Loja Aberta no Momento 
-                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#horarioFuncModal"> 
-                        <i class="fas fa-info-circle"></i>
+                    <button class="btn btn-sm btn-primary rounded-3" data-bs-toggle="modal" data-bs-target="#horarioFuncModal"> 
+                        <i class="fas fa-clock fa-sm"></i>
                     </button>`;	
 
     //verificar se loja esta aberta ou fechada
@@ -210,3 +208,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+function enviarPedido(){
+    //montar mensagem bonita para enviar no whatsapp com os itens do carrinho
+    const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    const total = updateTotal();
+    
+    
+    let mensagem = `🍫🍰🍬 *Pedido da Doceria Grace Gourmet* 🍬🍰🍫\n 🗓️ *Data: ${new Date().toLocaleDateString('pt-BR')} ${new Date().toLocaleTimeString('pt-BR')}*\n\n\n`;
+    mensagem += `Olá, tudo bem? Vim pelo site da Doceria e gostaria de fazer o seguinte pedido:\n\n 🛒 *Itens do Pedido:* 🛒\n`;
+
+    carrinho.forEach(item => {
+        mensagem += `${item.quantidade}x ${item.nome} - ${item.valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}\n`;
+    });
+    mensagem += `\n🛒*Total: ${total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}*`;
+    mensagem = encodeURIComponent(mensagem);
+    window.open(`https://wa.me/5531991805907?text=${mensagem}`, '_blank');
+}
