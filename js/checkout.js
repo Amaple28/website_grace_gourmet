@@ -217,8 +217,8 @@ function enviarPedido(){
     
     
     let mensagem = `Olá, tudo bem? Vim pelo site da Doceria e gostaria de fazer o seguinte pedido:\n\n`;
-    mensagem += `🍫🍬 *Pedido da Doceria Grace Gourmet* 🍬🍫\n 🗓️ *Data: ${new Date().toLocaleDateString('pt-BR')} ${new Date().toLocaleTimeString('pt-BR')}*\n\n`;
-    mensagem += ` 🛒 *Itens do Pedido:* 🛒\n\n`;
+    mensagem += `🍫 *Pedido da Doceria Grace Gourmet* 🍫\n 🗓️ *Data: ${new Date().toLocaleDateString('pt-BR')} ${new Date().toLocaleTimeString('pt-BR')}*\n\n`;
+    mensagem += ` 🛒 *Itens do Pedido:* 🛒\n`;
 
     carrinho.forEach(item => {
         mensagem += `${item.quantidade}x ${item.nome} - ${item.valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}\n`;
