@@ -832,7 +832,7 @@ const produtos = [
         valor: 'R$ 15,99',
         descricao: '',
         categoria: 10,
-        disponibilidade: false,
+        disponibilidade: true,
         imagens: [ 
             './img/produtos/brownie_escrita1.jpeg' 
         ]
