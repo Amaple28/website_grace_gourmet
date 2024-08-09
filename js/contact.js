@@ -14,5 +14,5 @@ function sendMessage(){
     messageToSend += mensagem; 
 
     // enviar a mensagem
-    window.open("https://wa.me/5531991805907?text=" + messageToSend);
+    window.open("https://wa.me/5532984595525?text=" + messageToSend);
 }
