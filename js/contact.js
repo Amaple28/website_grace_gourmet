@@ -10,7 +10,7 @@ function sendMessage(){
     // montar a mensagem com quebrar de linha e personalização de texto com emojis e negrito se possível
     var messageToSend = `Olá, meu nome é `+ nome + `. \n`;
     messageToSend += ` *Gostaria de mais informações sobre:* `+assunto +`. \n`; 
-    messageToSend += `*Pedido:* ` + pedido + `.\n\n\n`; 
+    messageToSend += `*Pedido:* ` + pedido + `. \n\n\n`; 
     messageToSend += mensagem; 
 
     // enviar a mensagem
