@@ -222,6 +222,14 @@ h6,
     }
 }
 
+.modal-dialog-scrollable {
+    height: calc(100% - 0rem) !important;
+}
+
+.modal-footer div{
+    width: -webkit-fill-available;
+}
+
 #videoModal .modal-dialog {
     position: relative;
     max-width: 800px;

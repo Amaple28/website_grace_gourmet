@@ -74,13 +74,45 @@
 
     <!-- Modal Checkout Start-->
     <div class="modal right fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="checkoutModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="checkoutModalLabel">Pedido</h5>
+                    <h5 class="modal-title" id="checkoutModalLabel">Carrinho</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+
+                    <div class="row clearflix dados-pedido">
+                        <h6>Cliente</h6>
+                        <div class="mb-3 col-12">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Nome Completo" required>
+                        </div>
+
+                        <h6>Endereço de Entrega</h6>
+                        <div class="col-5">
+                            <label for="cidade" class="form-label">Cidade</label>
+                            <input type="text" class="form-control" id="cidade" placeholder="Cidade de MG" required>
+                        </div>
+
+                        <div class="col-5">
+                            <label for="rua" class="form-label">Rua</label>
+                            <input type="text" class="form-control" id="rua" placeholder="Rua" required>
+                        </div>
+                        
+                        <div class="col-2">
+                            <label for="numero" class="form-label">Nº</label>
+                            <input type="number" class="form-control" id="numero" required>
+                        </div>
+                        
+                        <div class="mb-3 col-12">
+                            <label for="complemento" class="form-label">Complemento</label>
+                            <input type="text" class="form-control" id="complemento">
+                        </div>
+                    </div>
+
+                    <h6>Produtos</h6>
+
                     <table class="table">
                         <thead>
                             <tr>
@@ -101,6 +133,10 @@
                             </tr>
                         </tfoot>
                     </table>
+                    
+                </div>
+
+                <div class="modal-footer">
                     <div class="d-flex justify-content-between">
                         <button class="btn btn-outline-primary" data-bs-dismiss="modal">
                             <i class="bi bi-arrow-left"></i>

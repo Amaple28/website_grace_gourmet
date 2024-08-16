@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     renderizarCarrinho();
     document.getElementById('carrinho-modal').addEventListener('hide.bs.modal', atualizarItensLocalStorage);
+    // Chame esta função quando a página carregar
+    preencherInputsComDadosPedido(); // Preenche os inputs com os dados do pedido salvos no localStorage
     atualizarQuantidadeCarrinho(); // Atualiza a quantidade de itens no carrinho ao carregar a página
 });
 
@@ -56,6 +58,7 @@ function renderizarCarrinho() {
     
     updateTotal();
     verificarValorPedido();
+    verificarEnderecoNome();
     atualizarItensLocalStorage();
     atualizarQuantidadeCarrinho(); // Atualiza a quantidade de itens no carrinho ao renderizar
 }
@@ -91,8 +94,15 @@ function addEventListeners() {
             event.target.value = newQuantity;
             updateTotal();
             verificarValorPedido();
+            verificarEnderecoNome();
             atualizarItensLocalStorage();
             atualizarQuantidadeCarrinho(); // Atualiza a quantidade de itens no carrinho ao alterar a quantidade diretamente
+        });
+    });
+    document.querySelectorAll('.form-control').forEach(input => {
+        input.addEventListener('change', (event) => {  
+            verificarEnderecoNome();
+            atualizarItensLocalStorage(); 
         });
     });
 }
@@ -103,6 +113,7 @@ function modificarQuantidade(productId, delta) {
     input.value = Math.max(1, currentValue + delta);
     updateTotal();
     verificarValorPedido();
+    verificarEnderecoNome();
     atualizarItensLocalStorage();
     atualizarQuantidadeCarrinho(); // Atualiza a quantidade de itens no carrinho ao modificar a quantidade
 }
@@ -112,6 +123,7 @@ function removerProduto(productId) {
     row.remove();
     updateTotal();
     verificarValorPedido();
+    verificarEnderecoNome();
     atualizarItensLocalStorage();
     atualizarQuantidadeCarrinho(); // Atualiza a quantidade de itens no carrinho ao remover um item
 }
@@ -137,9 +149,30 @@ function updateTotal() {
     return total;
 }
 
+function preencherInputsComDadosPedido() {
+    const dadosPedido = JSON.parse(localStorage.getItem('dadosPedido'));
+
+    if (dadosPedido) {
+        document.getElementById('nome').value = dadosPedido.nome || '';
+        document.getElementById('cidade').value = dadosPedido.cidade || '';
+        document.getElementById('rua').value = dadosPedido.rua || '';
+        document.getElementById('numero').value = dadosPedido.numero || '';
+        document.getElementById('complemento').value = dadosPedido.complemento || '';
+    }
+}
+
 function verificarValorPedido(){
     const total = updateTotal();
     document.getElementById('btn-realizar-pedido').disabled = total < 15;
+}
+
+function verificarEnderecoNome(){
+    const nome = document.getElementById('nome').value;
+    const cidade = document.getElementById('cidade').value;
+    const rua = document.getElementById('rua').value;
+    const numero = document.getElementById('numero').value;
+
+    document.getElementById('btn-realizar-pedido').disabled = nome == '' || cidade == '' || rua== '' || numero == '';
 }
 
 function atualizarItensLocalStorage() {
@@ -155,6 +188,20 @@ function atualizarItensLocalStorage() {
         }
     });
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+    // Capturando os dados do pedido
+    const dadosPedido = {
+        nome: document.getElementById('nome').value,
+        cidade: document.getElementById('cidade').value,
+        rua: document.getElementById('rua').value,
+        numero: document.getElementById('numero').value,
+        complemento: document.getElementById('complemento').value
+    };
+
+    // Salvando os dados do pedido no localStorage
+    localStorage.setItem('dadosPedido', JSON.stringify(dadosPedido));
+
+
 }
 
 function atualizarQuantidadeCarrinho() {
@@ -215,10 +262,19 @@ function enviarPedido(){
     //montar mensagem bonita para enviar no whatsapp com os itens do carrinho
     const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
     const total = updateTotal();
-    
+    const nome = document.getElementById('nome').value;
+    const cidade = document.getElementById('cidade').value;
+    const rua = document.getElementById('rua').value;
+    const numero = document.getElementById('numero').value;
+    const complemento = document.getElementById('complemento').value;
     
     let mensagem = `Olá, tudo bem? Vim pelo site da Doceria e gostaria de fazer o seguinte pedido:\n\n`;
+
     mensagem += `🍫 *Pedido da Doceria Grace Gourmet* 🍫\n 🗓️ *Data: ${new Date().toLocaleDateString('pt-BR')} ${new Date().toLocaleTimeString('pt-BR')}*\n\n`;
+    
+    mensagem += `👤 *Nome:* ${nome}\n`;
+    mensagem += `📍 *Endereço:* ${rua}, ${numero} - ${complemento} - ${cidade}\n\n`;
+    
     mensagem += ` 🛒 *Itens do Pedido:* 🛒\n`;
 
     carrinho.forEach(item => {
@@ -227,5 +283,6 @@ function enviarPedido(){
 
     mensagem += `\n*TOTAL: ${total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}*`;
     mensagem = encodeURIComponent(mensagem);
-    window.open(`https://wa.me/5532984595525?text=${mensagem}`, '_blank');
+    window.open(`https://wa.me/5531991805907?text=${mensagem}`, '_blank');
+    // window.open(`https://wa.me/5532984595525?text=${mensagem}`, '_blank');
 }
