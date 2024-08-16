@@ -6,7 +6,7 @@ const categorias = [
     },
     {
         id: 2,
-        nome: 'Bomboniere'
+        nome: 'Bombons'
     },
     {
         id: 3,
@@ -234,7 +234,7 @@ const produtos = [
         categoria: 1,
         disponibilidade: true,
         imagens: [ 
-            './img/produtos/cp_felicidade7.jpeg' 
+            './img/produtos/cp_kinder_bueno.jpeg' 
         ]
     },
     {
@@ -273,7 +273,7 @@ const produtos = [
     {
         id: 20,
         nome: 'Afogadinho de Brownie',
-        valor: 'R$ 14,99',
+        valor: 'R$ 12,99',
         descricao: '',
         categoria: 4,
         disponibilidade: true,
@@ -355,8 +355,7 @@ const produtos = [
         categoria: 7,
         disponibilidade: true,
         imagens: [ 
-            './img/produtos/torta1.png', 
-            './img/produtos/torta2.png' 
+            './img/produtos/torta1.png'
         ]
     }, 
     {
@@ -367,8 +366,7 @@ const produtos = [
         categoria: 7,
         disponibilidade: true,
         imagens: [ 
-            './img/produtos/torta2.png', 
-            './img/produtos/torta1.png' 
+            './img/produtos/torta2.png'
         ]
     }, 
     {
@@ -379,8 +377,7 @@ const produtos = [
         categoria: 7,
         disponibilidade: true,
         imagens: [ 
-            './img/produtos/torta1.png', 
-            './img/produtos/torta2.png' 
+            './img/produtos/torta_ninho_morango.jpeg'
         ]
     }, 
     {
@@ -391,8 +388,7 @@ const produtos = [
         categoria: 7,
         disponibilidade: true,
         imagens: [ 
-            './img/produtos/torta1.png', 
-            './img/produtos/torta2.png' 
+            './img/produtos/torta_supremo_brownie.jpeg'
         ]
     }, 
     {
@@ -403,8 +399,7 @@ const produtos = [
         categoria: 7,
         disponibilidade: true,
         imagens: [ 
-            './img/produtos/torta2.png', 
-            './img/produtos/torta1.png' 
+            './img/produtos/torta_maracuja.jpeg'
         ]
     }, 
     {
@@ -483,11 +478,12 @@ const produtos = [
         id: 38,
         nome: 'Cone Trufado de Ninho',
         valor: 'R$ 9,99',
-        descricao: '',
+        descricao: 'Adicional: Nutella - R$ 2,99',
         categoria: 9,
         disponibilidade: true,
         imagens: [ 
-            './img/produtos/cone_trufado1.jpeg'
+            './img/produtos/cone_trufado_ninho.jpeg',
+            './img/produtos/cone_trufado_ninho2.jpeg'
         ]
     },
     {
@@ -498,7 +494,7 @@ const produtos = [
         categoria: 9,
         disponibilidade: true,
         imagens: [ 
-            './img/produtos/cone_trufado1.jpeg'
+            './img/produtos/cone_trufado_brigadeiro.jpeg'
         ]
     },
     {
@@ -509,7 +505,7 @@ const produtos = [
         categoria: 9,
         disponibilidade: true,
         imagens: [ 
-            './img/produtos/cone_trufado1.jpeg'
+            './img/produtos/cone_trufado_pacoca.jpeg'
         ]
     },
     {
@@ -520,7 +516,7 @@ const produtos = [
         categoria: 9,
         disponibilidade: true,
         imagens: [ 
-            './img/produtos/cone_trufado1.jpeg'
+            // './img/produtos/cone_trufado1.jpeg'
         ]
     },
     {
@@ -531,7 +527,7 @@ const produtos = [
         categoria: 9,
         disponibilidade: true,
         imagens: [ 
-            './img/produtos/cone_trufado1.jpeg'
+            // './img/produtos/cone_trufado1.jpeg'
         ]
     },
     {
@@ -704,37 +700,37 @@ const produtos = [
     },  
     {
         id: 57,
-        nome: 'Donuts de Churros',
+        nome: 'Donuts',
         valor: 'R$ 2,50',
-        descricao: '',
+        descricao: 'Sabores sortidos: Churros - Brigadeiro - Ninho',
         categoria: 12,
         disponibilidade: true,
         imagens: [ 
             './img/produtos/donuts1.jpeg' 
         ]
     },  
-    {
-        id: 58,
-        nome: 'Donuts de Brigadeiro',
-        valor: 'R$ 2,50',
-        descricao: '',
-        categoria: 12,
-        disponibilidade: true,
-        imagens: [ 
-            './img/produtos/donuts1.jpeg' 
-        ]
-    },  
-    {
-        id: 59,
-        nome: 'Donuts de Ninho',
-        valor: 'R$ 2,50',
-        descricao: '',
-        categoria: 12,
-        disponibilidade: true,
-        imagens: [ 
-            './img/produtos/donuts1.jpeg' 
-        ]
-    },  
+    // {
+    //     id: 58,
+    //     nome: 'Donuts de Brigadeiro',
+    //     valor: 'R$ 2,50',
+    //     descricao: '',
+    //     categoria: 12,
+    //     disponibilidade: true,
+    //     imagens: [ 
+    //         './img/produtos/donuts1.jpeg' 
+    //     ]
+    // },  
+    // {
+    //     id: 59,
+    //     nome: 'Donuts de Ninho',
+    //     valor: 'R$ 2,50',
+    //     descricao: '',
+    //     categoria: 12,
+    //     disponibilidade: true,
+    //     imagens: [ 
+    //         './img/produtos/donuts1.jpeg' 
+    //     ]
+    // },  
     {
         id: 60,
         nome: 'Fondue Grace Gourmet',
@@ -807,7 +803,7 @@ const produtos = [
     {
         id: 66,
         nome: 'Cento de Brownie',
-        valor: 'R$ ',
+        valor: 'R$ 95,00',
         descricao: '',
         categoria: 10,
         disponibilidade: true,
@@ -818,7 +814,7 @@ const produtos = [
     {
         id: 67,
         nome: 'Fatia de Brownie',
-        valor: 'R$ ',
+        valor: 'R$ 8,00',
         descricao: '',
         categoria: 10,
         disponibilidade: true,
@@ -837,7 +833,143 @@ const produtos = [
             './img/produtos/brownie_escrita1.jpeg' 
         ]
     },  
-    
+    {
+        id: 69,
+        nome: 'Copo da Felicidade Supremo',
+        valor: 'R$ 17,99',
+        descricao: '',
+        categoria: 1,
+        disponibilidade: true,
+        imagens: [ 
+            './img/produtos/cp_felicidade_supremo.jpeg' 
+        ]
+    }, 
+    {
+        id: 70,
+        nome: 'Copo da Felicidade Moranguete',
+        valor: 'R$ 14,99',
+        descricao: '',
+        categoria: 1,
+        disponibilidade: true,
+        imagens: [ 
+            './img/produtos/cp_felicidade_moranguete.jpeg' 
+        ]
+    }, 
+    {
+        id: 71,
+        nome: 'Caixinha do Amor',
+        valor: 'R$ 39,90',
+        descricao: 'Contém dadinhos de brownie banhados no brigadeiro',
+        categoria: 13,
+        disponibilidade: true,
+        imagens: [ 
+            './img/produtos/dadinhos_brownie1.jpeg' 
+        ]
+    }, 
+    {
+        id: 72,
+        nome: 'Caixinha do Amor + Cone Trufado',
+        valor: 'R$ 49,40',
+        descricao: 'Contém dadinhos de brownie banhados no brigadeiro e 1 cone trufado decorado com coração sabor brigadeiro',
+        categoria: 13,
+        disponibilidade: true,
+        imagens: [ 
+            './img/produtos/dadinhos_brownie1.jpeg' 
+        ]
+    }, 
+    {
+        id: 73,
+        nome: 'Coração Lapidado',
+        valor: 'R$ 49,90',
+        descricao: 'Coração lapidado trufado de recheio de brigadeiro com escritas "te amo"',
+        categoria: 13,
+        disponibilidade: true,
+        imagens: [ 
+            './img/produtos/barra_presenteavel1.jpeg' 
+        ]
+    }, 
+    {
+        id: 74,
+        nome: 'Copo da Felicidade Brownie Ninho',
+        valor: 'R$ 13,99',
+        descricao: '',
+        categoria: 1,
+        disponibilidade: true,
+        imagens: [ 
+            './img/produtos/cp_felicidade_brownie_ninho.jpeg' 
+        ]
+    },
+    {
+        id: 75,
+        nome: 'Copo da Felicidade Chocolatudo',
+        valor: 'R$ 13,99',
+        descricao: '',
+        categoria: 1,
+        disponibilidade: true,
+        imagens: [ 
+            './img/produtos/cp_felicidade_chocolatudo.jpeg'
+        ]
+    }, 
+    {
+        id: 76,
+        nome: 'Complementos',
+        valor: 'R$ 1,50',
+        descricao: 'Escolha entre: Paçoca - Leite Condensado - Leite Ninho - Banana - Granulado',
+        categoria: 3,
+        disponibilidade: true,
+        imagens: [  
+        ]
+    },
+    // {
+    //     id: 77,
+    //     nome: 'Complementos',
+    //     valor: 'R$ 2,00',
+    //     descricao: 'Escolha entre: Bala Fini',
+    //     categoria: 3,
+    //     disponibilidade: true,
+    //     imagens: [  
+    //     ]
+    // },
+    {
+        id: 78,
+        nome: 'Complementos',
+        valor: 'R$ 2,50',
+        descricao: 'Escolha entre: Bala Fini - Bis - Confete - Choco Power Balls de Chocolate Branco',
+        categoria: 3,
+        disponibilidade: true,
+        imagens: [  
+        ]
+    },
+    {
+        id: 79,
+        nome: 'Complementos',
+        valor: 'R$ 3,00',
+        descricao: 'Escolha entre: Morango - Chantininho - Amendoim Triturado',
+        categoria: 3,
+        disponibilidade: true,
+        imagens: [  
+        ]
+    },
+    {
+        id: 80,
+        nome: 'Complementos',
+        valor: 'R$ 3,50',
+        descricao: 'Escolha entre: Mousse de Ninho Trufado - Mousse de Chocolate Gourmet',
+        categoria: 3,
+        disponibilidade: true,
+        imagens: [  
+        ]
+    },
+    {
+        id: 81,
+        nome: 'Complementos',
+        valor: 'R$ 5,00',
+        descricao: 'Escolha entre: Cubos de Brownie - Mini Pudim',
+        categoria: 3,
+        disponibilidade: true,
+        imagens: [  
+        ]
+    },
     
 ];
 
