@@ -282,7 +282,6 @@ function enviarPedido(){
     });
 
     mensagem += `\n*TOTAL: ${total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}*`;
-    mensagem = encodeURIComponent(mensagem);
-    window.open(`https://wa.me/5531991805907?text=${mensagem}`, '_blank');
-    // window.open(`https://wa.me/5532984595525?text=${mensagem}`, '_blank');
+    mensagem = encodeURIComponent(mensagem); 
+    window.open(`https://wa.me/5532984595525?text=${mensagem}`, '_blank');
 }
