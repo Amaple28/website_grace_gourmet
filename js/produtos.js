@@ -516,7 +516,7 @@ const produtos = [
         categoria: 9,
         disponibilidade: true,
         imagens: [ 
-            // './img/produtos/cone_trufado1.jpeg'
+            './img/produtos/cone_trufado_kinder_bueno.jpeg'
         ]
     },
     {
@@ -527,7 +527,7 @@ const produtos = [
         categoria: 9,
         disponibilidade: true,
         imagens: [ 
-            // './img/produtos/cone_trufado1.jpeg'
+            './img/produtos/cone_trufado_maracuja.jpeg'
         ]
     },
     {
@@ -824,10 +824,10 @@ const produtos = [
     },  
     {
         id: 68,
-        nome: 'Brownie com Escrita Amor',
-        valor: 'R$ 15,99',
+        nome: 'Donuts com Escrita Amor',
+        valor: 'R$ 10,50',
         descricao: '',
-        categoria: 10,
+        categoria: 12,
         disponibilidade: true,
         imagens: [ 
             './img/produtos/brownie_escrita1.jpeg' 
@@ -855,17 +855,17 @@ const produtos = [
             './img/produtos/cp_felicidade_moranguete.jpeg' 
         ]
     }, 
-    {
-        id: 71,
-        nome: 'Caixinha do Amor',
-        valor: 'R$ 39,90',
-        descricao: 'Contém dadinhos de brownie banhados no brigadeiro',
-        categoria: 13,
-        disponibilidade: true,
-        imagens: [ 
-            './img/produtos/dadinhos_brownie1.jpeg' 
-        ]
-    }, 
+    // {
+    //     id: 71,
+    //     nome: 'Caixinha do Amor',
+    //     valor: 'R$ 39,90',
+    //     descricao: 'Contém dadinhos de brownie banhados no brigadeiro',
+    //     categoria: 13,
+    //     disponibilidade: true,
+    //     imagens: [ 
+    //         './img/produtos/dadinhos_brownie1.jpeg' 
+    //     ]
+    // }, 
     {
         id: 72,
         nome: 'Caixinha do Amor + Cone Trufado',
