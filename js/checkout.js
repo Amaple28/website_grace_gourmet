@@ -7,7 +7,16 @@ document.addEventListener('DOMContentLoaded', function() {
 function adicionarAoCarrinho(produtoID) {
     const produto = produtos.find(p => p.id === produtoID);
     const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-    const itemCarrinho = carrinho.find(item => item.id === produtoID);
+    const itemCarrinho = carrinho.find(item => item.id == produto.id);
+    
+    // let itemCarrinho;
+    // carrinho.forEach(item => {
+    //     if (item.id == produto.id) {
+    //         itemCarrinho = item;
+    //     }
+    // });
+    console.log(itemCarrinho);
+
     if (itemCarrinho) {
         itemCarrinho.quantidade++;
     } else {
