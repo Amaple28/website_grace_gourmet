@@ -415,6 +415,18 @@ td{
     z-index: 99;
 }
 
+.btn-whatsapp { 
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: .5s; 
+    position: fixed;
+    bottom: 70px;
+    right: 30px;
+    z-index: 99;
+}
+
 tbody tr td{
     border:none !important;
 }
