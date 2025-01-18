@@ -62,7 +62,7 @@ const produtos = [
     {
         id: 1,
         nome: 'Açaí 300ml',
-        valor: 'R$ 12,99',
+        valor: 'R$ 15,99',
         descricao: 'Escolha até 2 complementos grátis: Paçoca, Leite Condensado, Leite Ninho ou Banana',
         categoria: 3,
         disponibilidade: true,
@@ -73,7 +73,7 @@ const produtos = [
     {
         id: 2,
         nome: 'Açaí 500ml',
-        valor: 'R$ 16,99',
+        valor: 'R$ 22,99',
         descricao: 'Escolha até 2 complementos grátis: Paçoca, Leite Condensado, Leite Ninho ou Banana',
         categoria: 3,
         disponibilidade: true,
@@ -84,7 +84,7 @@ const produtos = [
     {
         id: 3,
         nome: 'Açaí 750ml',
-        valor: 'R$ 21,99',
+        valor: 'R$ 25,99',
         descricao: 'Escolha até 2 complementos grátis: Paçoca, Leite Condensado, Leite Ninho ou Banana',
         categoria: 3,
         disponibilidade: true,
