@@ -224,13 +224,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const minuto = data.getMinutes();
 
     const horario_func_loja = [
-        { dia: 0, abertura: 0, fechamento: 18 },
-        { dia: 1, abertura: 8, fechamento: 18 },
-        { dia: 2, abertura: 8, fechamento: 18 },
-        { dia: 3, abertura: 8, fechamento: 18 },
-        { dia: 4, abertura: 8, fechamento: 18 },
-        { dia: 5, abertura: 8, fechamento: 12 },
-        { dia: 6, abertura: 0, fechamento: 0 }
+        { dia: 0, abertura: 7, fechamento: 23 }, //segunda
+        { dia: 1, abertura: 18, fechamento: 23 }, //terça
+        { dia: 2, abertura: 18, fechamento: 23 }, //quarta
+        { dia: 3, abertura: 18, fechamento: 23 }, //quinta
+        { dia: 4, abertura: 18, fechamento: 23 }, //sexta
+        { dia: 5, abertura: 7, fechamento: 23.5 }, //sabado
+        { dia: 6, abertura: 7, fechamento: 23.5 } //domingo
     ]
 
     let conteudo_loja_fechada =`<span class="badge bg-danger  rounded-3">Fechado</span>
