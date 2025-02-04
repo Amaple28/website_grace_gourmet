@@ -129,7 +129,7 @@ const produtos = [
     {
         id: 7,
         nome: 'Bombom de Morango',
-        valor: 'R$ 12,99',
+        valor: 'R$ 13,99',
         descricao: '',
         categoria: 2,
         disponibilidade: true,
@@ -141,7 +141,7 @@ const produtos = [
     {
         id: 8,
         nome: 'Coxinha de Morango',
-        valor: 'R$ 9,99',
+        valor: 'R$ 12,99',
         descricao: '',
         categoria: 2,
         disponibilidade: true,
@@ -163,7 +163,7 @@ const produtos = [
     {
         id: 10,
         nome: 'Copo Premium da Casa',
-        valor: 'R$ 13,99',
+        valor: 'R$ 15,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -174,7 +174,7 @@ const produtos = [
     {
         id: 11,
         nome: 'Copo Cenourita',
-        valor: 'R$ 14,99',
+        valor: 'R$ 16,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -185,7 +185,7 @@ const produtos = [
     {
         id: 12,
         nome: 'Copo Morango',
-        valor: 'R$ 13,99',
+        valor: 'R$ 15,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -196,7 +196,7 @@ const produtos = [
     {
         id: 13,
         nome: 'Copudim',
-        valor: 'R$ 17,50',
+        valor: 'R$ 23,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -317,7 +317,7 @@ const produtos = [
     {
         id: 24,
         nome: 'Pudim Tradicional',
-        valor: 'R$ 5,50',
+        valor: 'R$ 9,99',
         descricao: '',
         categoria: 6,
         disponibilidade: true,
@@ -328,7 +328,7 @@ const produtos = [
     {
         id: 25,
         nome: 'Pudim de Paçoca',
-        valor: 'R$ 6,99',
+        valor: 'R$ 9,99',
         descricao: '',
         categoria: 6,
         disponibilidade: true,
@@ -339,7 +339,7 @@ const produtos = [
     {
         id: 26,
         nome: 'Pudim de Chocolate',
-        valor: 'R$ 6,99',
+        valor: 'R$ 9,99',
         descricao: '',
         categoria: 6,
         disponibilidade: true,
@@ -405,7 +405,7 @@ const produtos = [
     {
         id: 32,
         nome: 'Bolo no Pote Dois Amores',
-        valor: 'R$ 7,99',
+        valor: 'R$ 9,99',
         descricao: '',
         categoria: 8,
         disponibilidade: true,
@@ -417,7 +417,7 @@ const produtos = [
     {
         id: 33,
         nome: 'Bolo no Pote Ninho',
-        valor: 'R$ 7,99',
+        valor: 'R$ 9,99',
         descricao: '',
         categoria: 8,
         disponibilidade: true,
@@ -429,7 +429,7 @@ const produtos = [
     {
         id: 34,
         nome: 'Bolo no Pote Ninho com Geleia de Morango',
-        valor: 'R$ 7,99',
+        valor: 'R$ 9,99',
         descricao: '',
         categoria: 8,
         disponibilidade: true,
@@ -441,7 +441,7 @@ const produtos = [
     {
         id: 35,
         nome: 'Bolo no Pote Chocolatudo',
-        valor: 'R$ 7,99',
+        valor: 'R$ 9,99',
         descricao: '',
         categoria: 8,
         disponibilidade: true,
@@ -453,7 +453,7 @@ const produtos = [
     {
         id: 36,
         nome: 'Bolo no Pote de Paçoca',
-        valor: 'R$ 7,99',
+        valor: 'R$ 9,99',
         descricao: '',
         categoria: 8,
         disponibilidade: true,
@@ -465,7 +465,7 @@ const produtos = [
     {
         id: 37,
         nome: 'Bolo no Pote de Ninho com Morango',
-        valor: 'R$ 7,99',
+        valor: 'R$ 9,99',
         descricao: '',
         categoria: 8,
         disponibilidade: true,
@@ -566,7 +566,7 @@ const produtos = [
     {
         id: 46,
         nome: 'Sanduba de Brownie com Ninho',
-        valor: 'R$ 12,99',
+        valor: 'R$ 13,99',
         descricao: '',
         categoria: 10,
         disponibilidade: true,
@@ -578,7 +578,7 @@ const produtos = [
     {
         id: 47,
         nome: 'Sanduba de Brownie com Doce de Leite',
-        valor: 'R$ 12,99',
+        valor: 'R$ 13,99',
         descricao: '',
         categoria: 10,
         disponibilidade: true,
@@ -590,7 +590,7 @@ const produtos = [
     {
         id: 48,
         nome: 'Sanduba de Brownie com Brigadeiro',
-        valor: 'R$ 12,99',
+        valor: 'R$ 13,99',
         descricao: '',
         categoria: 10,
         disponibilidade: true,
@@ -891,7 +891,7 @@ const produtos = [
     {
         id: 74,
         nome: 'Copo da Felicidade Brownie Ninho',
-        valor: 'R$ 13,99',
+        valor: 'R$ 15,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -902,7 +902,7 @@ const produtos = [
     {
         id: 75,
         nome: 'Copo da Felicidade Chocolatudo',
-        valor: 'R$ 13,99',
+        valor: 'R$ 15,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
