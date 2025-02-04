@@ -229,8 +229,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { dia: 2, abertura: 18, fechamento: 23 }, //quarta
         { dia: 3, abertura: 18, fechamento: 23 }, //quinta
         { dia: 4, abertura: 18, fechamento: 23 }, //sexta
-        { dia: 5, abertura: 7, fechamento: 23.5 }, //sabado
-        { dia: 6, abertura: 7, fechamento: 23.5 } //domingo
+        { dia: 5, abertura: 7, fechamento: 23 }, //sabado
+        { dia: 6, abertura: 7, fechamento: 23 } //domingo
     ]
 
     let conteudo_loja_fechada =`<span class="badge bg-danger  rounded-3">Fechado</span>
