@@ -1,9 +1,9 @@
 
-const categorias = [
-    {
-        id: 1,
-        nome: 'Copos'
-    },
+    const categorias = [
+        {
+            id: 1,
+            nome: 'Copos'
+        },
     {
         id: 2,
         nome: 'Bombons'
@@ -163,7 +163,7 @@ const produtos = [
     {
         id: 10,
         nome: 'Copo Premium da Casa',
-        valor: 'R$ 15,99',
+        valor: 'R$ 17,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -174,7 +174,7 @@ const produtos = [
     {
         id: 11,
         nome: 'Copo Cenourita',
-        valor: 'R$ 16,99',
+        valor: 'R$ 17,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -185,7 +185,7 @@ const produtos = [
     {
         id: 12,
         nome: 'Copo Morango',
-        valor: 'R$ 15,99',
+        valor: 'R$ 17,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -207,7 +207,7 @@ const produtos = [
     {
         id: 14,
         nome: 'Copo Delica Y',
-        valor: 'R$ 16,99',
+        valor: 'R$ 17,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -218,7 +218,7 @@ const produtos = [
     {
         id: 15,
         nome: 'Copo Supremo Premium',
-        valor: 'R$ 16,99',
+        valor: 'R$ 17,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -229,7 +229,7 @@ const produtos = [
     {
         id: 16,
         nome: 'Copo Brownie Kinder Bueno',
-        valor: 'R$ 16,99',
+        valor: 'R$ 17,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -240,7 +240,7 @@ const produtos = [
     {
         id: 17,
         nome: 'Copo Brownie de Uva',
-        valor: 'R$ 16,99',
+        valor: 'R$ 17,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -251,7 +251,7 @@ const produtos = [
     {
         id: 18,
         nome: 'Copo Brownie Grace',
-        valor: 'R$ 16,99',
+        valor: 'R$ 17,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -847,7 +847,7 @@ const produtos = [
     {
         id: 70,
         nome: 'Copo da Felicidade Moranguete',
-        valor: 'R$ 14,99',
+        valor: 'R$ 17,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -891,7 +891,7 @@ const produtos = [
     {
         id: 74,
         nome: 'Copo da Felicidade Brownie Ninho',
-        valor: 'R$ 15,99',
+        valor: 'R$ 17,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
@@ -902,7 +902,7 @@ const produtos = [
     {
         id: 75,
         nome: 'Copo da Felicidade Chocolatudo',
-        valor: 'R$ 15,99',
+        valor: 'R$ 17,99',
         descricao: '',
         categoria: 1,
         disponibilidade: true,
