@@ -161,17 +161,6 @@ const produtos = [
         ]
     },
     {
-        id: 10,
-        nome: 'Copo Premium da Casa',
-        valor: 'R$ 17,99',
-        descricao: '',
-        categoria: 1,
-        disponibilidade: true,
-        imagens: [ 
-            './img/produtos/cp_felicidade12.jpeg' 
-        ]
-    },
-    {
         id: 11,
         nome: 'Copo Cenourita',
         valor: 'R$ 17,99',
