@@ -679,8 +679,8 @@ const produtos = [
     {
         id: 56,
         nome: 'Canjica',
-        valor: 'R$ 8,50',
-        descricao: '',
+        valor: 'R$ 13,99',
+        descricao: '250ml',
         categoria: 20,
         disponibilidade: true,
         imagens: [ 
